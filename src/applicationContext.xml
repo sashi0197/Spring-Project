@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    
+                 <!-- IOC -->
+    
+  <bean id="productService1" class="com.kani.studenttribe.springcore.ProductServiceImpl">
+      <constructor-arg>   <!-- 5. -->  <!-- .  Constructor Injection     4. -->
+                <value>MacAir2021M1</value>
+      </constructor-arg>
+  
+  </bean>
+   
+   <bean id="productService2"  class="com.kani.studenttribe.springcore.ProductServiceImpl">
+      <property name="products">   <!-- .  Setter Injection   12 -->
+         <value>MacPro2021M1</value>  <!-- 13 -->
+       </property>
+   </bean>
+   
+   <bean id="productServic  3" class="com.kani.studenttribe.springcore.ProductServiceImpl">
+   	<property name="products">
+   		<value>Hp15s Ryzen5</value>
+   		</property>
+   </bean>
+   
+</beans>
